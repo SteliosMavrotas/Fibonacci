@@ -1,0 +1,14 @@
+memo={}
+def fibonacci(n):
+    if n==1 or n==1:
+        memo[n]=1
+        return 1
+    elif n==0:
+        memo[n]=0
+        return 0
+    elif n in memo:
+        return memo[n]
+    else:
+        f=fibonacci(n-1)+fibonacci(n-2)
+        memo[n]=f
+        return f
